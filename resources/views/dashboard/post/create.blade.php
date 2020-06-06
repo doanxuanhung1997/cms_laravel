@@ -8,9 +8,9 @@
               <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
                 <div class="card">
                     <div class="card-header">
-                      <i class="fa fa-align-justify"></i> {{ __('Create Note') }}</div>
+                      <i class="fa fa-align-justify"></i> {{ __('Create Post') }}</div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('notes.store') }}">
+                        <form method="POST" action="">
                             @csrf
                             <div class="form-group row">
                                 <label>Title</label>
@@ -30,9 +30,11 @@
                             <div class="form-group row">
                                 <label>Status</label>
                                 <select class="form-control" name="status_id">
-                                    @foreach($statuses as $status)
+                                    <option value="aa">test</option>
+                                    <option value="aa">test</option>
+                                    {{-- @foreach($statuses as $status)
                                         <option value="{{ $status->id }}">{{ $status->name }}</option>
-                                    @endforeach
+                                    @endforeach --}}
                                 </select>
                             </div>
 
@@ -42,7 +44,7 @@
                             </div>
  
                             <button class="btn btn-block btn-success" type="submit">{{ __('Add') }}</button>
-                            <a href="{{ route('notes.index') }}" class="btn btn-block btn-primary">{{ __('Return') }}</a> 
+                            <a href="{{ route('post') }}" class="btn btn-block btn-primary">{{ __('Return') }}</a> 
                         </form>
                     </div>
                 </div>

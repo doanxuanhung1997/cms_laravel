@@ -12,7 +12,7 @@
           </div>
           <div class="card-body">
             <div class="row">
-                <a class="btn btn-lg btn-primary" href="">Add new role</a>
+                <a class="btn btn-lg btn-primary" href="{{ route('role.create') }}">Add new role</a>
             </div>
             <br>
             <table class="table table-striped table-bordered datatable">
@@ -54,10 +54,10 @@
                             </a>
                         </td>
                         <td>
-                            <a href="" class="btn btn-primary">Show</a>
+                            <a href="{{ route('role.show') }}" class="btn btn-primary">Show</a>
                         </td>
                         <td>
-                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="{{ route('role.edit') }}" class="btn btn-primary">Edit</a>
                         </td>
                         <td>
                             <form action="" method="POST">

@@ -5,7 +5,7 @@
 </div>
 <ul class="c-sidebar-nav">
     <li class="c-sidebar-nav-item">
-        <a class="c-sidebar-nav-link" href="">
+        <a class="c-sidebar-nav-link" href="{{ route('dashboard') }}">
             <i class="c-sidebar-nav-icon cil-3d"></i>
             Dashboard
         </a>
@@ -13,15 +13,15 @@
     <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
         <svg class="c-sidebar-nav-icon">
             <use xlink:href="/icons/sprites/free.svg#cil-people"></use>
-        </svg> Management User</a>
+        </svg> Management Users</a>
         <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/login">
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('user') }}">
                 <svg class="c-sidebar-nav-icon">
                     <use xlink:href="/icons/sprites/free.svg#cil-user"></use>
                 </svg> User</a>
             </li>
             <li class="c-sidebar-nav-item">
-                <a class="c-sidebar-nav-link" href="{{ route('login') }}">
+                <a class="c-sidebar-nav-link" href="{{ route('role') }}">
                     <svg class="c-sidebar-nav-icon">
                         <use xlink:href="/icons/sprites/free.svg#cil-meh"></use>
                     </svg> Role
@@ -33,15 +33,15 @@
     <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
         <svg class="c-sidebar-nav-icon">
             <use xlink:href="/icons/sprites/free.svg#cil-newspaper"></use>
-        </svg> Management Post</a>
+        </svg> Management Posts</a>
         <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="editors/code-editor.html">
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('post') }}">
                 <svg class="c-sidebar-nav-icon">
                     <use xlink:href="/icons/sprites/free.svg#cil-notes"></use>
                 </svg> Post</a>
             </li>
             <li class="c-sidebar-nav-item">
-                <a class="c-sidebar-nav-link" href="editors/markdown-editor.html">
+                <a class="c-sidebar-nav-link" href="{{ route('tag') }}">
                     <svg class="c-sidebar-nav-icon">
                         <use xlink:href="/icons/sprites/free.svg#cil-tags"></use>
                     </svg> Tag
