@@ -26,10 +26,10 @@ Route::get('/', function () {
 })->name('dashboard');
 
 Route::prefix('user')->group(function () { 
-	Route::get('/', function () {     return view('dashboard.homepage'); })->name('user');
-	Route::get('/create', function () {     return view('dashboard.roles.create'); })->name('user.create');
-	Route::get('/edit', function () {     return view('dashboard.roles.edit'); })->name('user.edit');
-	Route::get('/show', function () {     return view('dashboard.roles.show'); })->name('user.show');
+	Route::get('/', function () {     return view('dashboard.user.index'); })->name('user');
+	Route::get('/create', function () {     return view('dashboard.user.create'); })->name('user.create');
+	Route::get('/edit', function () {     return view('dashboard.user.edit'); })->name('user.edit');
+	Route::get('/show', function () {     return view('dashboard.user.show'); })->name('user.show');
 });
 
 Route::prefix('role')->group(function () { 

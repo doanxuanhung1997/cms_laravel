@@ -13371,6 +13371,7 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   }
 }
 
+
 @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
