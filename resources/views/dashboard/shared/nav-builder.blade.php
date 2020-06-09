@@ -10,42 +10,41 @@
             Dashboard
         </a>
     </li>
-    <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
-        <svg class="c-sidebar-nav-icon">
-            <use xlink:href="/icons/sprites/free.svg#cil-people"></use>
-        </svg> Management Admin</a>
+    <li class="c-sidebar-nav-dropdown">
+        <a class="c-sidebar-nav-dropdown-toggle" href="#">
+            <i class="c-sidebar-nav-icon cil-people"></i>
+            Management Admin
+        </a>
         <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('user') }}">
-                <svg class="c-sidebar-nav-icon">
-                    <use xlink:href="/icons/sprites/free.svg#cil-user"></use>
-                </svg> User</a>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="{{ route('user') }}">
+                    <i class="c-sidebar-nav-icon cil-user"></i>
+                    User
+                </a>
             </li>
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link" href="{{ route('role') }}">
-                    <svg class="c-sidebar-nav-icon">
-                        <use xlink:href="/icons/sprites/free.svg#cil-meh"></use>
-                    </svg> Role
-                    {{-- <span class="badge badge-danger">PRO</span> --}}
+                    <i class="c-sidebar-nav-icon cil-meh"></i>
+                    Role
                 </a>
             </li>
         </ul>
     </li>
-    <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
-        <svg class="c-sidebar-nav-icon">
-            <use xlink:href="/icons/sprites/free.svg#cil-newspaper"></use>
-        </svg> Management Posts</a>
+    <li class="c-sidebar-nav-dropdown">
+        <a class="c-sidebar-nav-dropdown-toggle" href="#">
+            <i class="c-sidebar-nav-icon cil-newspaper"></i>
+        Management Posts</a>
         <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('post') }}">
-                <svg class="c-sidebar-nav-icon">
-                    <use xlink:href="/icons/sprites/free.svg#cil-notes"></use>
-                </svg> Post</a>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="{{ route('post') }}">
+                    <i class="c-sidebar-nav-icon cil-notes"></i>
+                    Post
+                </a>
             </li>
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link" href="{{ route('tag') }}">
-                    <svg class="c-sidebar-nav-icon">
-                        <use xlink:href="/icons/sprites/free.svg#cil-tags"></use>
-                    </svg> Tag
-                    {{-- <span class="badge badge-danger">Tag</span> --}}
+                    <i class="c-sidebar-nav-icon cil-tags"></i>
+                    Tag
                 </a>
             </li>
         </ul>
