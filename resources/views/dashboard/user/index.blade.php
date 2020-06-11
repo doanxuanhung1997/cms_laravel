@@ -61,7 +61,7 @@
 											<form action="" method="POST">
 												@method('DELETE')
 												@csrf
-												<button class="btn btn-block btn-danger">Delete User</button>
+												<button class="btn btn-block btn-danger">Delete</button>
 											</form>
 
 										</td>
@@ -95,7 +95,7 @@
 											<form action="" method="POST">
 												@method('DELETE')
 												@csrf
-												<button class="btn btn-block btn-danger">Delete User</button>
+												<button class="btn btn-block btn-danger">Delete</button>
 											</form>
 
 										</td>
@@ -129,7 +129,7 @@
 											<form action="" method="POST">
 												@method('DELETE')
 												@csrf
-												<button class="btn btn-block btn-danger">Delete User</button>
+												<button class="btn btn-block btn-danger">Delete</button>
 											</form>
 
 										</td>
@@ -163,7 +163,7 @@
 											<form action="" method="POST">
 												@method('DELETE')
 												@csrf
-												<button class="btn btn-block btn-danger">Delete User</button>
+												<button class="btn btn-block btn-danger">Delete</button>
 											</form>
 
 										</td>
@@ -197,7 +197,7 @@
 											<form action="" method="POST">
 												@method('DELETE')
 												@csrf
-												<button class="btn btn-block btn-danger">Delete User</button>
+												<button class="btn btn-block btn-danger">Delete</button>
 											</form>
 
 										</td>

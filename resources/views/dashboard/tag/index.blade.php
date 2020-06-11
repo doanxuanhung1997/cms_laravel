@@ -14,7 +14,7 @@
                 <div class="col-lg-4 col-md-4"><a href="{{ route('user.create') }}" class="btn btn-primary">{{ __('Create User') }}</a></div>
                 <div class="col-lg-8 col-md-8">Filter</div>
               </div>
-              <table class="table table-responsive-sm table-hover table-outline mb-0">
+              <table class="table table-hover table-outline mb-0">
                 <thead class="thead-light">
                   <tr>
                     <th class="text-center">
