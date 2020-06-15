@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <h4>{{ __('Roles') }}</h4></div>
                         <div class="card-body">
-                            <a href="{{ route('user.create') }}" class="btn btn-primary mb-2">{{ __('Create Role') }}</a>
+                            <a href="{{ route('role.create') }}" class="btn btn-primary mb-2">{{ __('Create Role') }}</a>
                             <table class="table table-responsive-sm table-hover table-outline mb-0">
                                 <thead class="thead-light">
                                     <tr>

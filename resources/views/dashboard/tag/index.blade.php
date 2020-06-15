@@ -11,7 +11,7 @@
             <h4>{{ __('Users') }}</h4></div>
             <div class="card-body">
               <div class="row mb-2"> 
-                <div class="col-lg-4 col-md-4"><a href="{{ route('user.create') }}" class="btn btn-primary">{{ __('Create User') }}</a></div>
+                <div class="col-lg-4 col-md-4"><a href="{{ route('tag.create') }}" class="btn btn-primary">{{ __('Create Tag') }}</a></div>
                 <div class="col-lg-8 col-md-8">Filter</div>
               </div>
               <table class="table table-hover table-outline mb-0">
