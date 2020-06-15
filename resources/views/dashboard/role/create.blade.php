@@ -10,10 +10,11 @@
                     <div class="card-header">
                         <h4>{{ __('Create Role') }}</h4></div>
                         <div class="card-body">
-                            <form action="/action_page.php">
+                            <form action="{{ route('role.store') }}" method="POST">
+                                <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                                 <div class="d-flex flex-row mb-3">
                                     <label class="mt-1 mr-2" for="role">Role:</label>
-                                    <input type="text" class="form-control" placeholder="Enter role" id="role" required>
+                                    <input type="text" class="form-control" placeholder="Enter role" name="role" id="role" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>

@@ -21,32 +21,13 @@
                                    </tr>
                                </thead>
                                <tbody>
+                                @foreach($roles as $role)
                                 <tr>
                                     <td  class="text-center">
-                                        Admin
+                                        {{ $role->role }}
                                     </td>
                                     <td>
-                                        <small class="text-muted">Jun 11, 2015</small>
-                                    </td>
-                                    <td>
-                                        <a href="{{ route('user.edit') }}" class="btn btn-block btn-primary">Edit</a>
-                                    </td>
-                                    <td>
-
-                                        <form action="" method="POST">
-                                            @method('DELETE')
-                                            @csrf
-                                            <button class="btn btn-block btn-danger">Delete</button>
-                                        </form>
-
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <td  class="text-center">
-                                        Support
-                                    </td>
-                                    <td>
-                                        <small class="text-muted">Jun 11, 2015</small>
+                                        <small class="text-muted">{{ $role->created_at }}</small>
                                     </td>
                                     <td>
                                         <a href="{{ route('user.edit') }}" class="btn btn-block btn-primary">Edit</a>
@@ -61,26 +42,7 @@
 
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td  class="text-center">
-                                        Member
-                                    </td>
-                                    <td>
-                                        <small class="text-muted">Jun 11, 2015</small>
-                                    </td>
-                                    <td>
-                                        <a href="{{ route('user.edit') }}" class="btn btn-block btn-primary">Edit</a>
-                                    </td>
-                                    <td>
-
-                                        <form action="" method="POST">
-                                            @method('DELETE')
-                                            @csrf
-                                            <button class="btn btn-block btn-danger">Delete</button>
-                                        </form>
-
-                                    </td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
 

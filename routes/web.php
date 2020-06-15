@@ -33,8 +33,9 @@ Route::prefix('user')->group(function () {
 });
 
 Route::prefix('role')->group(function () { 
-	Route::get('/', function () {     return view('dashboard.role.index'); })->name('role');
+	Route::get('/',			   'RoleController@index')->name('role');
 	Route::get('/create', function () {     return view('dashboard.role.create'); })->name('role.create');
+	Route::post('/store',       'RoleController@store')->name('role.store');
 	Route::get('/edit', function () {     return view('dashboard.role.edit'); })->name('role.edit');
 	Route::get('/show', function () {     return view('dashboard.role.show'); })->name('role.show');
 });
