@@ -2,43 +2,35 @@
 
 @section('content')
 
-
 <div class="container-fluid">
-  <div class="fade-in">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="card">
-          <div class="card-header"><h4>Edit role</h4></div>
-          <div class="card-body">
-            @if(Session::has('message'))
-            <div class="alert alert-success" role="alert">{{ Session::get('message') }}</div>
-            @endif
-            <form method="POST" action="">
-                @csrf
-                @method('PUT')
-                <input type="hidden" name="id" value=""/>
-                <table class="table table-bordered datatable">
-                    <tbody>
-                        <tr>
-                            <th>
-                                Name
-                            </th>
-                            <td>
-                                <input class="form-control" name="name" value="" type="text"/>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button class="btn btn-primary" type="submit">Save</button>
-                <a class="btn btn-primary" href="">Return</a>
-            </form>
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>{{ __('Edit Role') }}</h4></div>
+                        <div class="card-body">
+                            <form action="{{ route('role.update', ['id' => $role->id]) }}" method="POST">
+                                <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+                                <div class="d-flex flex-row mb-3">
+                                    <label class="mt-1 mr-2" for="role">Role:</label>
+                                    <input type="text" class="form-control" placeholder="Enter role" name="role" id="role" value="{{ $role->role }}" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-@endsection
-
-@section('javascript')
 
 
-@endsection
+    @endsection
+
+
+    @section('javascript')
+
+
+    @endsection
+

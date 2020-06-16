@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -8,6 +8,6 @@ class Tag extends Model
 {
     protected $table="tag";
     protected  $primaryKey = 'id';
-   
-   
+   protected $keyType = 'string';
+    public $incrementing = false;
 }

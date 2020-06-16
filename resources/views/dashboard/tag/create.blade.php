@@ -10,10 +10,11 @@
                     <div class="card-header">
                         <h4>{{ __('Create Tag') }}</h4></div>
                         <div class="card-body">
-                            <form action="/action_page.php">
+                            <form action="{{ route('tag.store') }}" method="POST">
+                                <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                                 <div class="d-flex flex-row mb-3">
                                     <label class="mt-1 mr-2" for="tag">Tag:</label>
-                                    <input type="tag" class="form-control" placeholder="Enter tag" id="tag" required>
+                                    <input type="tag" class="form-control" placeholder="Enter tag" id="tag" name="tag" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>

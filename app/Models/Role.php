@@ -8,6 +8,6 @@ class Role extends Model
 {
     protected $table="role";
     protected  $primaryKey = 'id';
-   
-
+    protected $keyType = 'string';
+    public $incrementing = false;
 }
