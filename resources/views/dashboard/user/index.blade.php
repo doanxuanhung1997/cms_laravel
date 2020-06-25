@@ -19,11 +19,11 @@
 									<tr>
 										<th class="text-center">
 											<svg class="c-icon">
-												 <use xlink:href="/icons/sprites/free.svg#cil-user"></use>
+												<use xlink:href="/icons/sprites/free.svg#cil-user"></use>
 											</svg>
 										</th>
 										<th>Email</th>
-										<th>FullName</th>
+										<th>Full Name</th>
 										<th>Role</th>
 										<th>Created Date</th>
 										<th></th>
@@ -32,7 +32,43 @@
 									</tr>
 								</thead>
 								<tbody>
+									@foreach($users as $user)	
 									<tr>
+										<td class="text-center">
+											<div class="c-avatar">
+												<img class="c-avatar-img" src="assets/img/avatars/1.jpg" alt="user@email.com">
+											</div>
+										</td>
+										<td>
+											{{$user->email}}
+										</td>
+										<td>
+											{{$user->name}}
+										</td>
+										<td>
+											{{$user->email}}
+										</td>
+										<td>
+											<small class="text-muted">{{$user->created_at}}</small>
+										</td>
+										<td>
+											<a href="{{ route('user.show') }}" class="btn btn-block btn-primary">View</a>
+										</td>
+										<td>
+											<a href="{{ route('user.edit') }}" class="btn btn-block btn-primary">Edit</a>
+										</td>
+										<td>
+
+											<form action="" method="POST">
+												@method('DELETE')
+												@csrf
+												<button class="btn btn-block btn-danger">Delete</button>
+											</form>
+
+										</td>
+									</tr>
+									@endforeach
+									{{-- <tr>
 										<td class="text-center">
 											<div class="c-avatar">
 												<img class="c-avatar-img" src="assets/img/avatars/1.jpg" alt="user@email.com">
@@ -167,41 +203,7 @@
 											</form>
 
 										</td>
-									</tr>
-									<tr>
-										<td class="text-center">
-											<div class="c-avatar">
-												<img class="c-avatar-img" src="assets/img/avatars/1.jpg" alt="user@email.com">
-											</div>
-										</td>
-										<td>
-											Yiorgos Avraamu
-										</td>
-										<td>
-											Yiorgos Avraamu
-										</td>
-										<td>
-											Yiorgos Avraamu
-										</td>
-										<td>
-											<small class="text-muted">Jun 11, 2015</small>
-										</td>
-										<td>
-											<a href="{{ route('user.show') }}" class="btn btn-block btn-primary">View</a>
-										</td>
-										<td>
-											<a href="{{ route('user.edit') }}" class="btn btn-block btn-primary">Edit</a>
-										</td>
-										<td>
-
-											<form action="" method="POST">
-												@method('DELETE')
-												@csrf
-												<button class="btn btn-block btn-danger">Delete</button>
-											</form>
-
-										</td>
-									</tr>
+									</tr> --}}
 								</tbody>
 							</table>
 							

@@ -5255,7 +5255,6 @@ html:not([dir="rtl"]) .dropleft .dropdown-toggle:empty::after {
   background-color: #fff;
   border-color: #958bef;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {

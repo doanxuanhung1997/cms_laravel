@@ -39,7 +39,7 @@
             <i class="c-icon mr-2 cil-settings"></i>
             Change Password
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" href="{{ route('login') }}">
             <i class="c-icon mr-2 cil-account-logout"></i>
             Logout
           </a>
